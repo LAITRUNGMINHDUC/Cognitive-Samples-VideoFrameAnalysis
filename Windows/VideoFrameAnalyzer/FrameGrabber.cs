@@ -169,7 +169,8 @@ namespace VideoFrameAnalyzer
 
             await StopProcessingAsync().ConfigureAwait(false);
 
-            _reader = new VideoCapture(cameraIndex);
+            // _reader = new VideoCapture(cameraIndex);
+            _reader = new VideoCapture("rtsp://testlab:@123@Abc@cam.toucan.vn:5554/Streaming/Channels/101/");
 
             _fps = overrideFPS;
 
